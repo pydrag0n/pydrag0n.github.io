@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+* {
+    font-family: 'Montserrat Alternates';
+}
+/* 
+body {
+    margin: 0 0;
+} */
+
+body {
+    overflow-x: hidden;
+
+}
+.main-container {
+   
+    padding: 8px;
+    margin: -8px;
+    height: 720px;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(124, 241, 154, 0.89));
+    
+
+}
+.header {
+
+    margin-top: 8px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 30px;
+    overflow-x: hidden;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+
+}
+
+.header > button{
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+
+    background-color: rgba(122, 122, 96, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+
+}
+
+.header > button:hover{
+    color: rgb(255, 123, 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .header > div.img-content {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+} */
+
+/* .header > div.img-content img {
+    border-radius: 50%;
+    width: 30px; 
+
+}  */
+.about_me {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.about_me > span.hello {
+    
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about_me > span.info {
+    font-size: 30px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
