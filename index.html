@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pydragon</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
     <div class="main-container">
-    <div class="header">
-        <button onclick="scrollToSection('about_me')">home</button>
-        <button onclick="scrollToSection('stack')">stack</button>
-        <button onclick="scrollToSection('contact')" style="margin-right: 30px;">contact</button>
+        <div class="header">
+            <button onclick="scrollToSection('about_me')">home</button>
+            <button onclick="scrollToSection('contact')" style="margin-right: 30px;">contact</button>
+        </div>
+
+        <section id="about_me">
+            <div class="about_me">
+
+                <span class="hello">hello username</span>
+                <br>
+                <span class="info">I am a beginner Python backend developer. 
+                    <br>My goal is to become a full stack developer.</span>
+            </div>
+
+            <div class="stack-container">
+                <div class="teh-group">
+                    <div class="teh-item">Python</div>
+                    <div class="teh-item">Bash</div>
+                    <div class="teh-item">Css</div>
+                    <div class="teh-item">HTML</div>
+                    <div class="teh-item">Aiogram</div>
+                    <div class="teh-item">Pyrogram</div>
+                </div>
+                <div class="teh-group">
+                    <div class="teh-item">Flask</div>
+                    <div class="teh-item">Django</div>
+                    <div class="teh-item">FastApi</div>
+                    <div class="teh-item">Asyncio</div>
+                    <div class="teh-item">Matplotlib</div>
+                    <div class="teh-item">Git</div>    
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="tg"></div>
+                <div class="github"></div>
+
+            </div>
+
     </div>
 
-    <section id="about_me">
-        <div class="about_me">
 
-            <span class="hello">hello username</span>
-            <br>
-            <span class="info">I am a beginner Python backend developer. <br>My goal is to become a full stack developer.</span>
-        </div>
-        <div class="move_list">
-            <div class="stack_move_group">
-                <div class="stack_item">
-                    <span>LOLL</span>
-                    <span>MIMi</span>
-                </div>
-            </div>    
-        </div>
 
     </section>
 
 
 
-</div>
-    <!-- <section id="stack">
-        <div class="stack">
-            <span>My stack</span>
-        </div>
-    </section> -->
-
+    </div>
     <section id="contact"></section>
-   
+
 </body>
 
 <script>
 
-function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    section.scrollIntoView({ 
-        behavior: 'smooth'
-    });
-}
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 
 </script>
+
 </html>

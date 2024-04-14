@@ -2,10 +2,6 @@
 * {
     font-family: 'Montserrat Alternates';
 }
-/* 
-body {
-    margin: 0 0;
-} */
 
 body {
     overflow-x: hidden;
@@ -38,8 +34,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(5px);
-
+    background-color: rgba(37, 37, 37, 0.521);
+    backdrop-filter: blur(20px);
+    z-index: 100;
 }
 
 .header > button{
@@ -57,21 +54,9 @@ body {
 }
 
 .header > button:hover{
-    color: rgb(255, 123, 0);
+    color: rgb(255, 255, 255);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-/* .header > div.img-content {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-} */
-
-/* .header > div.img-content img {
-    border-radius: 50%;
-    width: 30px; 
-
-}  */
 .about_me {
     margin-top: 100px;
     margin-bottom: 40px;
@@ -97,6 +82,31 @@ body {
     font-size: 30px;
 }
 
+.stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teh-group {
+    display: flex;
+    flex-direction: row;
+}
+.teh-item {
+    padding: 20px;
+    margin:8px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.5s ease;
+}
+
+.teh-item:hover {
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    cursor: pointer;
+}
 
 ::-webkit-scrollbar {
     width: 0px;
